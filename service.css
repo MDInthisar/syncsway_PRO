@@ -14,6 +14,21 @@ body {
 
 }
 
+.navshow{
+    width: 100vw;height: 50vh;background-color: #3a0a3a;position: absolute;z-index: 999;display: flex;align-items: center;justify-content: center;flex-direction: column;gap: 2vw;border-color: #3a0a3a;display: none;
+}
+.navshow a{
+    font-size: 5vw;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+}
+.navshow a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #3a0a3a;
+    padding: 1vw 2vw;
+    border-radius: 5vw;
+}
 
 nav {
     display: flex;

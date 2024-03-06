@@ -23,8 +23,15 @@
             <a href="./blog.html">Blog</a>
             <a href="./contact.html">Contact Us</a>
         </div>
+        <i class="ri-menu-line" id="btnbar"></i>
     </nav>
-
+    <div class="navshow" id="navshow">
+        <a href="./index.html">Home</a>
+            <a href="./about.html">About Us</a>
+            <a href="./service.html">Services</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contact.html">Contact Us</a>
+    </div>
     <div class="syncsway">
         <img src="./img/ban.jpeg" alt="">
         <p>In the ever-evolving digital landscape, my fervor lies in empowering businesses to not just navigate, but
@@ -157,6 +164,28 @@
             </div>
         </div>
     </footer>
+    <script>
+        // const scroll = new LocomotiveScroll({
+//   el: document.querySelector("#main"),
+//   smooth: true,
+// });
+
+let flag = 0;
+let btn = document.getElementById("btnbar");
+let navshow = document.getElementById('navshow');
+btn.addEventListener("click", () => {
+    if(flag === 0)
+    {
+        navshow.style.display = 'block';
+        flag = 1;
+    }
+    else{
+        navshow.style.display = 'none';
+        flag = 0;
+    }
+});
+
+    </script>
 </body>
 
 </html>

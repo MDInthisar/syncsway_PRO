@@ -5,6 +5,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html::-webkit-scrollbar{
+    width: 1px;
+}
 html,
 body {
     width: 100%;
@@ -14,6 +17,21 @@ body {
 
 }
 
+.navshow{
+    width: 100vw;height: 50vh;background-color: #3a0a3a;position: absolute;z-index: 999;display: flex;align-items: center;justify-content: center;flex-direction: column;gap: 2vw;border-color: #3a0a3a;display: none;
+}
+.navshow a{
+    font-size: 5vw;
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+}
+.navshow a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #3a0a3a;
+    padding: 1vw 2vw;
+    border-radius: 5vw;
+}
 
 nav {
     display: flex;
@@ -22,7 +40,7 @@ nav {
     padding: 2vw 2vw;
     background-color: transparent;
     /* box-shadow: 0px 5px 27px rgba(84, 154, 247, 0.3); */
-    box-shadow: 0px 5px 27px rgba(215, 202, 235, 0.3);
+    box-shadow: 0px 5px 27px rgb(122 0 255 / 30%);
     /* background-color: rgb(122 0 255 / 30%); */
 
 }
@@ -31,9 +49,6 @@ nav {
         width: 17vw;
     height: 3vw;
     object-fit: cover;
-
-
-
 }
 
 #navlink {
@@ -63,11 +78,16 @@ nav {
     scale: 1.5;
 }
 
+nav i{
+    display: none;
+}
+
 
 .contact {
     margin: 5vw 0;
     width: 100vw;
     height: 80vh;
+    /* background-color: crimson; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -336,4 +356,162 @@ footer .footbox {
 .footimg i {
     color: #9e81a0;
     font-size: 2.5vw;
+}
+
+
+
+
+
+
+
+
+
+/* media query */
+@media only screen and (max-width: 800px) {
+   .navshow {
+        width: 100vw;
+        height: 50vh;
+        background-color: #3a0a3a;
+        position: absolute;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2vw;
+        padding: 1vw;
+        border-color: #3a0a3a;
+                display: none;
+
+    }
+
+    .navshow a {
+        font-size: 5vw;
+        text-decoration: none;
+        color: #fff;
+        font-weight: lighter;
+    }
+
+    .navshow a:hover {
+        background-color: rgb(255, 255, 255);
+        color: #3a0a3a;
+        padding: 1vw 2vw;
+        border-radius: 5vw;
+    }
+        nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 2vw;
+    background-color: transparent;
+    /* box-shadow: 0px 5px 27px rgba(84, 154, 247, 0.3); */
+    box-shadow: 0px 5px 27px rgb(122 0 255 / 30%);
+    /* background-color: rgb(122 0 255 / 30%); */
+
+}
+
+#logo {
+        width: 17vw;
+    height: 3vw;
+    object-fit: cover;
+}
+
+#navlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    gap: 2vw;
+    padding-right: 6vw;
+}
+
+#navlink a {
+    text-decoration: none;
+    color: #743089;
+    font-size: 1.2vw;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+#navlink a:hover {
+    text-decoration: none;
+    /* color: rgb(0, 0, 0); */
+    color: #743089;
+    font-size: 1vw;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    scale: 1.5;
+}
+
+nav i{
+    display: block;
+}
+
+    .contact {
+        margin: 23vw 0;
+        width: 100vw;
+        height: 45vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact .formdata1 {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0; /* Adjusted padding-left to remove unwanted space */
+    }
+
+    .formdata1 p {
+        font-size: 2.5vw;
+        font-weight: lighter;
+        color: rgb(0, 0, 0);
+        padding: 1vw 0; /* Adjusted padding for better spacing */
+        letter-spacing: 1px;
+    }
+
+    .formdata1 .icon {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2vw;
+        margin: 2vw 0; /* Adjusted margin for better spacing */
+    }
+
+    .formdata1 img {
+        width: 5vw;
+    }
+
+    .contact .formdata2 {
+        width: 100%; /* Adjusted width to occupy the full width */
+        height: auto; /* Adjusted height to be auto for better responsiveness */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4vw 0; /* Adjusted margin for better spacing */
+    }
+
+    .contact .formdata2 .formcard {
+        width: 90%; /* Adjusted width for better responsiveness */
+        min-height: 50%;
+        margin: 0; /* Removed margin for better spacing */
+    }
+
+    .formcard form input {
+        font-size: 1.5vw; /* Adjusted font-size for better readability */
+    }
+
+    .formcard form button {
+        font-size: 1.2vw; /* Adjusted font-size for better readability */
+        padding: 1vw 3vw; /* Adjusted padding for better spacing */
+    }
+
+
+
 }
