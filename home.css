@@ -17,7 +17,7 @@ body {
   display: block;
 }
 
-.navshow {
+#navshow {
   width: 100vw;
   height: 50vh;
   background-color: #3a0a3a;
@@ -31,13 +31,13 @@ body {
   border-color: #3a0a3a;
   display: none;
 }
-.navshow a {
+#navshow a {
   font-size: 5vw;
   text-decoration: none;
   color: #fff;
   font-weight: lighter;
 }
-.navshow a:hover {
+#navshow a:hover {
   background-color: rgb(255, 255, 255);
   color: #3a0a3a;
   padding: 1vw 2vw;
@@ -569,6 +569,26 @@ footer .footbox {
   font-size: 2.5vw;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media query */
 @media only screen and (max-width: 800px) {
   nav {
@@ -589,19 +609,24 @@ footer .footbox {
   }
 
   #navlink {
+display: none;
+}
+
+
+  #navshow {
     display: none;
-    /* display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 2vw;
-    padding-right: 6vw; */
+    padding-right: 6vw;
   }
 
-  #navlink a {
+  #navshow a {
     text-decoration: none;
     /* color: #743089; */
-    color: red;
-    font-size: 1.2vw;
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
     font-weight: lighter;
     letter-spacing: 1px;
     transition: 0.5s;
@@ -621,45 +646,17 @@ footer .footbox {
     display: block;
   }
 
-   navshow {
-        width: 100vw;
-        height: 50vh;
-        background-color: #3a0a3a;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 2vw;
-        border-color: #3a0a3a;
-        display: none;
-        position: absolute;
-        z-index: 999;
-    }
-
-    .navshow a {
-        font-size: 5vw;
-        text-decoration: none;
-        color: #fff;
-        font-weight: lighter;
-    }
-
-    .navshow a:hover {
-        background-color: rgb(255, 255, 255);
-        color: #3a0a3a;
-        padding: 1vw 2vw;
-        border-radius: 5vw;
-    }
   /* syncsway */
   .syncsway {
     width: 100vw;
-    /* height: 81.8vw; */
+    height: 160vw;
     background-color: rgb(214, 109, 127);
     /* position: relative */
   }
 
   .syncsway video {
     width: 100vw;
-    height: 35vh;
+    height: 100%;
     object-fit: cover;
     position: relative;
   }
@@ -667,11 +664,11 @@ footer .footbox {
   .syncwaycont {
     position: absolute;
     left: 50%;
-    top: 21%;
+    top: 40%;
     transform: translate(-50%, -50%);
   }
   .syncsway h1 {
-    font-size: 2.2vw;
+    font-size: 8.2vw;
     font-weight: 100;
     color: #ffffff;
     margin-bottom: 1vw;
@@ -680,7 +677,7 @@ footer .footbox {
 
   .syncsway p {
     /* margin-top: 1vw; */
-    font-size: 1.5vw;
+    font-size: 0vw;
     line-height: 2.5vw;
     color: rgb(255, 255, 255);
     font-weight: lighter;
@@ -697,7 +694,7 @@ footer .footbox {
   .weDo h1 {
     text-align: center;
     padding: 5vw;
-    font-size: 3.5vw;
+    font-size: 6.5vw;
     color: #743089;
   }
 
@@ -711,12 +708,13 @@ footer .footbox {
   }
 
   .thecard {
-    width: 20vw;
-    height: 20vw;
+       width: 35vw;
+    height: 35vw;
     margin: 1vw;
     /* background-color: yellow; */
     /* position: absolute; */
     transform-style: preserve-3d;
+    margin: 3vw;
     transition: all 0.5s ease;
     box-shadow: 0px 5px 27px rgba(132, 0, 255, 0.3);
   }
@@ -784,7 +782,7 @@ footer .footbox {
 
   .brand {
     width: 100vw;
-    min-height: 10vh;
+    min-height: 55vh;
     margin: 6vw 0;
   }
 
@@ -799,13 +797,14 @@ footer .footbox {
     width: 30vw;
     height: 0.2vw;
     background-color: black;
+    margin: 5vw;
   }
 
   .clients h1 {
     text-align: center;
     padding: 1vw;
     color: #743089;
-    font-size: 3.5vw;
+    font-size: 6.5vw;
   }
 
   .brand .brdimg {
@@ -822,8 +821,8 @@ footer .footbox {
   }
 
   .brdimg .brdcard {
-    width: 15vw;
-    /* height: 200px; */
+    width: 30vw;
+    height: 30vw;
     background-color: violet;
     display: flex;
     align-items: center;
@@ -854,9 +853,9 @@ footer .footbox {
 
   .why h1 {
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 6.5vw;
     color: #743089;
-    padding-bottom: 8vw;
+    padding-bottom: 8vw;padding-top: 2vw;
   }
 
   .wcard1 {
@@ -870,7 +869,7 @@ footer .footbox {
   .wcard1 .wc1 {
     box-shadow: 0px 5px 27px rgb(122 0 255 / 30%);
     width: 75vw;
-    height: 20vw;
+    height: 35vw;
     background-color: #fff;
     margin: 1vw 0;
     display: flex;
@@ -884,8 +883,8 @@ footer .footbox {
   .wcard1 .wc1 .icon {
     position: absolute;
     top: -17%;
-    width: 7vw;
-    height: 7vw;
+    width: 12vw;
+    height: 12vw;
     background-color: #f1f1f1;
     border-radius: 50%;
     padding: 1vw;
@@ -899,13 +898,13 @@ footer .footbox {
 
   .wcard1 .wc1 h1 {
     text-align: center;
-    font-size: 2vw;
+    font-size: 4vw;
     padding: 1vw 0;
   }
 
   .wcard1 .wc1 p {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 0 1vw;
   }
 
@@ -921,7 +920,7 @@ footer .footbox {
     box-shadow: 0px 5px 27px rgb(122 0 255 / 30%);
 
     width: 75vw;
-    height: 20vw;
+    height: 35vw;
     background-color: #fff;
     margin: 5vw 0;
     display: flex;
@@ -935,8 +934,8 @@ footer .footbox {
   .wcard2 .wc .icon {
     position: absolute;
     top: -17%;
-    width: 7vw;
-    height: 7vw;
+    width: 12vw;
+    height: 12vw;
     background-color: #f1f1f1;
     border-radius: 50%;
     padding: 1vw;
@@ -950,13 +949,13 @@ footer .footbox {
 
   .wcard2 .wc h1 {
     text-align: center;
-    font-size: 2vw;
+    font-size: 4vw;
     padding: 1vw 0;
   }
 
   .wcard2 .wc p {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 0 1vw;
   }
 
