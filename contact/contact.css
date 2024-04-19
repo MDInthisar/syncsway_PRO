@@ -327,7 +327,7 @@ footer {
 
   #logo {
     width: 30vw;
-    height: 3vw;
+    height: 6vw;
     object-fit: cover;
   }
 
@@ -382,8 +382,15 @@ nav i{
         padding-left: 0; /* Adjusted padding-left to remove unwanted space */
     }
 
+    .formdata1 h1 {
+    font-size: 14vw;
+    padding-bottom: 1vw;
+    font-weight: lighter;
+    line-height: 14vw;
+}
+
     .formdata1 p {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         font-weight: lighter;
         color: rgb(0, 0, 0);
         padding: 1vw 0; /* Adjusted padding for better spacing */
@@ -396,6 +403,7 @@ nav i{
         flex-wrap: wrap;
         gap: 2vw;
         margin: 2vw 0; /* Adjusted margin for better spacing */
+        display: none;
     }
 
     .formdata1 img {
@@ -418,12 +426,14 @@ nav i{
     }
 
     .formcard form input {
-        font-size: 1.5vw; /* Adjusted font-size for better readability */
+        font-size: 4.5vw; /* Adjusted font-size for better readability */
+            margin: 3vw 0;
     }
 
     .formcard form button {
-        font-size: 1.2vw; /* Adjusted font-size for better readability */
-        padding: 1vw 3vw; /* Adjusted padding for better spacing */
+            font-size: 3.2vw;
+    padding: 3vw 15vw;
+    border-radius: 5vw;
     }
 
 .footer-row {

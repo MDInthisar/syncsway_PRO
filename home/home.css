@@ -271,7 +271,7 @@ nav i {
 
 .brdcard {
   flex: 0 0 auto;
-  width: 50vw;
+  width: 20vw;
   /* background-color: violet; */
   margin-right: 10px; /* Adjust the spacing between cards */
 }
@@ -512,7 +512,7 @@ footer {
 
   #logo {
     width: 30vw;
-    height: 3vw;
+    height: 6vw;
     object-fit: cover;
   }
 
@@ -718,6 +718,12 @@ display: none;
     font-size: 6.5vw;
   }
 
+  .brdcard {
+  flex: 0 0 auto;
+  width: 50vw;
+  /* background-color: violet; */
+  margin-right: 10px; /* Adjust the spacing between cards */
+}
 
   /* why choose us */
   .wal {
