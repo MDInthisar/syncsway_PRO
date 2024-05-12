@@ -201,3 +201,178 @@ footer {
     background-color: #fff;
     padding: .5vw;
   }
+
+
+/*  */
+
+/* solution */
+.Solutions {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(https://www.kindpng.com/picc/m/600-6003481_brandlume-digital-marketing-branding-website-services-digital-agency.png);
+
+}
+
+.Solutions h1 {
+    text-align: center;
+    padding: 2vw 0;
+}
+
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .p {
+  width: 100vw;
+    min-height: 0vw;
+    background-color: #743089;
+    margin: 0vw 5vw;
+        border-bottom-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+  }
+.p p{
+ font-size: 1.5vw;
+    line-height: 2vw;
+    padding: 2vw;
+    color: #fff
+}
+
+.Solu {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.solcard {
+    width: 350px;
+    min-height: 200px;
+    margin: 3vw 2vw;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1vw;
+    /* box-shadow: 0px 5px 27px rgba(0, 110, 255, 0.3); */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 27px rgb(190, 111, 221);
+    transition: .3s;
+}
+
+.solcard:hover {
+    box-shadow: 0px 5px 27px rgb(99, 6, 136);
+}
+
+.solcardimg {
+    width: 290px;
+    height: 290px;
+    margin-top: 2vw;
+}
+
+.solcardimg img {
+    width: 100%;
+    border-radius: 1vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.solcard h3 {
+    margin-top: 1vw;
+    color: #1fa7df;
+    transition: color 0.3s;
+    /* Adding a color transition */
+}
+
+.solcard:hover h3 {
+    color: white;
+    /* Changing text color on card hover */
+}
+
+.solcard p {
+    text-align: center;
+    margin: 2vw 2vw;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s;
+    /* Adding a color transition */
+}
+
+.solcard:hover p {
+    color: white;
+    /* Changing text color on card hover */
+}
+
+.solcard a {
+    font-size: 1vw;
+    padding-bottom: 1vw;
+    text-decoration: none;
+    color: #1fa7df;
+}
+
+.solcard:hover a {
+    font-size: 1vw;
+    padding-bottom: 1vw;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/*  */
+
+
+
+@media only screen and (max-width: 800px) {
+
+
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    margin: 6vw 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 10px;
+  }
+
+  .footer-column p {
+    margin: 1vw 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 3px;
+    transition: 0.5s;
+    line-height: 4vw;
+  }
+  .footer-column ul li:hover {
+    font-size: 2vw;
+    background-color: #9e81a0;
+    border-radius: 3vw;
+  }
+
+  .contact-info-row {
+    margin-bottom: 5px;
+  }
+
+.social-icons{
+  margin-top: 5vw;
+}
+  .social-icons a i{
+    color: #9e81a0;
+    font-size: 15.5vw;
+    transition: .5s
+    ;
+  }
+  .social-icons a i:hover{
+    color: black;
+    background-color: #fff;
+    padding: 3vw;
+  }
+}
